@@ -1,46 +1,21 @@
-* {
-    background-color: pink;
+.circle {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-img {
-    width: 30%;
+#bottom {
+    background-color: rgb(116, 115, 115);
     display: block;
-    margin: 0 auto;
+    margin: 0;
+    border: 0;
+    padding: 50px;
 }
 
-p {
-    color: white;
-    width: 35%;
-    margin: 10px auto;
-    text-align: center;
-}
-
-a {
-    font-size: 1.5em;
-}
-
-h1:hover {
-    color: black;
-}
-
-
-
-h1 {
-    text-align: center;
-    color: white;
-}
-
-h4 {
-    color: white;
-    text-align: center;
-}
-
-ol {
-    color: black;
-}
-
-footer p {
-    color: black;
-    font-size: 1em;
-    padding: 10px;
+.desk, .logo, .face {
+    width: 20%;
+    border: 10px solid rgb(64, 64, 64);
+    border-radius: 50%;
+    margin: 10px 65px;
 }
