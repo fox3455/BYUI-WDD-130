@@ -200,6 +200,17 @@ main section img {
     padding-bottom: 15px;
 }
 
+.facts-header {
+    text-align: left;
+}
+
+.faq-img {
+    float: right;
+    padding: 5px;
+    border: solid #3c3c3c;
+    
+}
+
 footer {
     background-color: #EF6351;
     color: black;

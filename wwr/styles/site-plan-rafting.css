@@ -30,6 +30,23 @@ Fonts are separated by a & */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a{
+  text-align: center;
+  color: #f5f0f6;
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover {
+  background-color: #339989;
+  color: #f5f0f6;
+}
+
 body {
   max-width: 960px;
   margin: 0 auto;
