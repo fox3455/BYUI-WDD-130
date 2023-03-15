@@ -18,27 +18,40 @@ body {
 
 #hero {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: auto;
 }
 
 #hero-box {
     grid-column: 1/4;
-    grid-row: 1/3;
+    grid-row: 1/4;
     z-index: -1;
 }
 
 #hero-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 #hero-msg {
     grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 100px;
+    grid-row: 2/2;
+    margin: auto;
     color: white;
     text-align: center;
 }
+
+.msg-box {
+    z-index: -1;
+    grid-column: 2/3;
+    grid-row: 2/2;
+    background-color: #000000;
+    opacity: 0.6;
+    margin: 10px;
+    border: 10px solid black;
+}
+
+
 
 .home-title {
     color: #ffffff;
@@ -259,58 +272,85 @@ button {
 }
 
 .theteam {
-    margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.blk {
-    margin: auto;
-}
-
-.neon {
-    margin: auto;
-}
-
-.hawk {
-    margin: auto;
-}
-
-.soap {
-    margin: auto;
-}
-
-.fox {
-    margin: auto;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
 }
 
 .player-img {
-    height: 200px;
-    width: 200px;
-    border: 5px solid #fce700;
+    border: 5px solid #fce700; 
 }
 
 .position, .player {
-    margin-top: -10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.blk img{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.neon img{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.hawk img{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.soap img{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.fox img{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.socials {
+    text-align: left;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.social-links {
+    max-width: 50%;
+    margin: auto;
+}
+
+.fox-twitch img, .fox-youtube img{
+    height: 30px;
+    margin: auto;
+    float: left;  
 }
 
 .intro {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns:  repeat(4, 1fr);
+    margin: 50px;
+    grid-gap: 20px;
 }
 
 .main-img {
-    height: 400px;
-    margin-left: 100px;
-    grid-column: 2/2;
-    margin-top: 22px;
+    margin: auto;
+    width: 500px;
+    grid-column: 2/3;
     border: 3px solid #f2963f;
 }
 
 .main-intro {
-    margin: auto;
-    text-align: center;
-    grid-column: 3/5;
+    text-align: left;
+    grid-column: 3/4;
 }
 
 footer {
@@ -379,14 +419,21 @@ footer .social img {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
+
+    .theteam {
+        display: block;
+        height: auto;
     }
+
+    .blk, .soap, .hawk, .neon, .fox { 
+        margin: 50px auto;
+        width: 80%;
+    }
+
     #background {
         display: none;
     }
-    .mountains, .msg {
+    .main-img, .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
